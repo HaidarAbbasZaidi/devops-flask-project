@@ -39,4 +39,4 @@ jobs:
         with:
          context: .
          push: true
-         tags: YOUR_USERNAME/devops-flask-app:latest
+         tags: haidar110/devops-flask-app:latest
