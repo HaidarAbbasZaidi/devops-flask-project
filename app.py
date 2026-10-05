@@ -1,16 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return "DevOps Flask App is Running!"
+    return render_template("index.html")
 
 
 @app.route("/health")
 def health():
-    return {"status": "healthy"}
+    return "OK"
 
 
 if __name__ == "__main__":
