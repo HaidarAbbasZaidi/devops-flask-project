@@ -1,34 +1,38 @@
-# DevOps Flask Project
+# 🚀 DevOps Flask Application
 
-A beginner-friendly DevOps project that demonstrates a complete CI/CD workflow for a Python Flask application.
+A simple Flask web application containerized using Docker and automated with GitHub Actions CI/CD.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Python
 - Flask
-- Pytest
 - Git & GitHub
-- GitHub Actions
 - Docker
 - Docker Hub
+- GitHub Actions
+- CI/CD
 
-## Project Workflow
+## 📌 Project Overview
+
+This project demonstrates how a Flask application can be containerized using Docker and integrated with a CI/CD pipeline using GitHub Actions.
+
+Whenever changes are pushed to the GitHub repository, GitHub Actions automatically builds the Docker image and publishes it to Docker Hub.
+
+## 🔄 CI/CD Workflow
 
 ```text
-Flask Application
-       ↓
-      Git
-       ↓
-    GitHub
-       ↓
+Developer
+   ↓
+Git Push
+   ↓
+GitHub Repository
+   ↓
 GitHub Actions
-       ↓
-   Run Tests
-       ↓
- Docker Build
-       ↓
- Docker Hub
-       ↓
- Docker Container
-       ↓
-    localhost
+   ↓
+Build Docker Image
+   ↓
+Push Image to Docker Hub
+   ↓
+Run Docker Container
+   ↓
+Flask Application
